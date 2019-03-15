@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+const (
+	name = "Hello, My Name is Nikul."
+)
 
 func main() {
-	fmt.Println("Hello World")
+	//This will be face
+	fmt.Println(name)
+	fmt.Println("|^^^^^^^^|")
+	fmt.Println("|  ^   ^ |")
+	fmt.Println("|    o   |")
+	fmt.Println("|   ___  |")
+	fmt.Println("|________|")
 }
