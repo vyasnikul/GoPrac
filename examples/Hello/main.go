@@ -9,11 +9,8 @@ const (
 )
 
 func main() {
-	//This will be face
-	fmt.Println(name)
-	fmt.Println("|^^^^^^^^|")
-	fmt.Println("|  ^   ^ |")
-	fmt.Println("|    o   |")
-	fmt.Println("|   ___  |")
-	fmt.Println("|________|")
+	var name string
+	fmt.Print("Enter your name:")
+	fmt.Scanf("%s", &name)
+	fmt.Println("Hello my name is: ", name)
 }
