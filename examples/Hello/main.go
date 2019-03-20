@@ -91,9 +91,15 @@ func quickSort(arr []int) []int {
 
 func main() {
 	xs := []int{95, 78, 46, 58, 45, 86, 99, 251, 320}
+	fmt.Println("<!DOCTYPE html>")
+	fmt.Println("<html>")
+	fmt.Println("<head>My First Web Page in Go</head>")
+	fmt.Println("<body>")
 	fmt.Println("Input Array: ", xs)
 	fmt.Println("Linear Search Output:", linearSearch(xs, 99))
 	fmt.Println("Binary Search Output:", binarySearch(xs, 86))
 	fmt.Println("Interpolation Search Output:", interpolationSearch(xs, 251))
 	fmt.Println("Quick Sort : ", quickSort(xs))
+	fmt.Println("</body>")
+	fmt.Println("</html>")
 }
