@@ -38,6 +38,7 @@ func findKIndex(arr []int, k int) (int, int) {
 			}
 		}
 	}
+	return index1, index2
 }
 
 func main() {
