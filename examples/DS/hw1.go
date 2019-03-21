@@ -30,16 +30,6 @@ func CheckPrime(x int) {
 // findKIndex : find index of elements leading to value k
 func findKIndex(arr []int, k int) (int, int) {
 	index1, index2 := 0, 0
-	// j := len(arr) - 1
-	// for idx, val := range arr {
-	// 	if val+arr[j] == k {
-	// 		index1 = idx
-	// 		index2 = j
-	// 	} else {
-	// 		fmt.Println("Hi")
-	// 		j--
-	// 	}
-	// }
 	for idx1, val1 := range arr {
 		for idx2, val2 := range arr[idx1+1:] {
 			if val1+val2 == k {
@@ -48,7 +38,6 @@ func findKIndex(arr []int, k int) (int, int) {
 			}
 		}
 	}
-	return index1, index2
 }
 
 func main() {
