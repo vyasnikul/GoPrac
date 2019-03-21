@@ -15,12 +15,12 @@ func PrintEvenNumbers(x int) {
 // CheckPrime : Check the number is prime or not.
 func CheckPrime(x int) {
 	count := 0
-	for i := 1; i < x; i++ {
+	for i := 1; i < x/2; i++ {
 		if x%i == 0 {
 			count++
 		}
 	}
-	if count == 2 {
+	if count == 1 {
 		fmt.Println(x, " is prime.")
 	} else {
 		fmt.Println(x, " is not prime.")
@@ -53,7 +53,7 @@ func findKIndex(arr []int, k int) (int, int) {
 
 func main() {
 	x := 0
-	xs := []int{2, 4, 5, 6, 7, 8, 10}
+	xs := []int{2, 4, 5, 6, 7, 8, 10, 10}
 	fmt.Println("Enter the limit for Even numbers:")
 	fmt.Scanf("%d", &x)
 	fmt.Println("===========RESULT===============")
